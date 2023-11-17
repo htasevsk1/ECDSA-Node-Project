@@ -62,13 +62,17 @@ input {
   &:hover {
     cursor: pointer;
   }
+  &.disabled {
+    background-color: #7ee2e1;
+    cursor: no-drop;
+  }
 }
 
 .wallet {
   display: flex;
   flex-direction: column;
 
-  .balance {
+  .balance, .address {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
